@@ -68,10 +68,10 @@
   	$Verifasso=getVerifasso($base);?>
   	<h2>Gérer les inscriptions</h2>
 	<?php foreach($Inscrit as $inscrit){?>		
-		<h4 style="text-align:center;"><?=$inscrit["nomevenement"]?></h4>
 		<table class="table table-hover">
 			<thead>
 				<tr>
+					<th>Evénement</th>
 					<th>Nom</th>
 					<th>Prénom</th>
 					<th>Adresse mail</th>
@@ -84,7 +84,8 @@
 				</tr>
 			</thead>
 			<tbody>
-			<tr>					
+			<tr>
+				<td><?=$inscrit["nomevenement"]?></td>				
 				<td><?=$inscrit["nom"]?></td>
 				<td><?=$inscrit["prenom"]?></td>
 				<td><?=$inscrit["email"]?></td>
